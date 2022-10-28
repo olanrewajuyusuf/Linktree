@@ -1,38 +1,138 @@
-.App {
+body {
+  height: 1100px;
+  font-size: 18px;
+  background: rgb(255, 249, 249);
+}
+* {
+  box-sizing: border-box;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#container {
+  border: 3px solid rgb(253, 170, 170);
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding-bottom: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.profile {
+  margin: 50px 0 50px 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.avatar {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 150px;
+  margin-right: 50px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 0 rgb(253, 170, 170);
+  cursor: pointer;
+}
+.avatar .fa {
+  width: 30px;
+  height: 30px;
+  color: rgb(253, 170, 170);
+}
+.avatar .ellipsis {
+  margin-top: 11px;
+  display: none;
+}
+.avatar .share {
+  margin-top: 10px;
+}
+.profile-pics {
+  width: 150px;
+  height: auto;
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 0px rgb(253, 170, 170);
+}
+#twitter {
+  font-size: 35px;
+}
+#slack {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
+a {
+  display: block;
+  margin-top: 15px;
+}
+button {
+  width: 80%;
+  height: 50px;
+  font-size: 18px;
+  background: white;
+  border-radius: 30px;
+  border: 2px solid rgb(253, 170, 170);
+}
+button:hover {
+  background: rgb(253, 170, 170);
   color: white;
+  transition: background 1s;
+  cursor: pointer;
+}
+.icon {
+  margin: 50px 0;
+}
+.slack-logo {
+  width: 40px;
+  margin-right: 20px;
+}
+.git {
+  width: 40px;
+  height: 40px;
+}
+footer {
+  width: 90%;
+  height: 150px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 3px solid rgb(253, 170, 170);
+  border-radius: 10px;
+}
+.ingressive {
+  width: 150px;
+  height: 35px;
+}
+.zuri-logo span {
+  color: red;
+}
+footer p {
+  color: gray;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 600px) {
+  body {
+    height: 1150px;
   }
-  to {
-    transform: rotate(360deg);
+  .avatar {
+    right: 20px;
+  }
+  .avatar .ellipsis {
+    margin-left: 10px;
+    display: block;
+  }
+  .avatar .share {
+    display: none;
+  }
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 180px;
+    padding: 20px 0;
+  }
+  .ingressive,
+  .zuri-logo,
+  footer p {
+    margin-left: 20px;
   }
 }
