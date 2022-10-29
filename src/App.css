@@ -1,7 +1,6 @@
 body {
-  height: 1100px;
+  height: 1000px;
   font-size: 18px;
-  background: rgb(255, 249, 249);
 }
 * {
   box-sizing: border-box;
@@ -10,47 +9,44 @@ body {
   padding: 0;
 }
 #container {
-  border: 3px solid rgb(253, 170, 170);
-  width: 90%;
-  margin: 20px auto;
-  border-radius: 10px;
-  padding-bottom: 20px;
+  margin-top: 100px;
 }
 .profile {
-  margin: 50px 0 50px 0;
+  margin: 50px 0 70px 0;
 }
 .avatar {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   position: absolute;
-  right: 150px;
-  margin-right: 50px;
-  background: white;
+  top: 70px;
+  right: 300px;
   border-radius: 50%;
-  box-shadow: 0 0 5px 0 rgb(253, 170, 170);
+  border: 2px dotted rgb(226, 226, 226);
   cursor: pointer;
 }
-.avatar .fa {
-  width: 30px;
-  height: 30px;
-  color: rgb(253, 170, 170);
-}
 .avatar .ellipsis {
-  margin-top: 11px;
+  width: 18px;
+  height: 18px;
+  margin: 12px 0 0 11px;
+  color: rgb(193, 191, 191);
   display: none;
 }
 .avatar .share {
-  margin-top: 10px;
+  width: 30px;
+  height: 30px;
+  margin-top: 6px;
+  color: rgb(193, 191, 191);
 }
 .profile-pics {
-  width: 150px;
+  width: 100px;
   height: auto;
   background-size: cover;
   border-radius: 50%;
-  box-shadow: 0px 0px 10px 0px rgb(253, 170, 170);
+  box-shadow: 0px 0px 2px 0px black;
+  margin-bottom: 25px;
 }
 #twitter {
-  font-size: 35px;
+  font-size: 20px;
 }
 #slack {
   position: absolute;
@@ -61,43 +57,37 @@ body {
   overflow: hidden;
 }
 a {
+  width: 85%;
+  background: rgb(226, 226, 226);
+  color: black;
+  border-radius: 5px;
   display: block;
-  margin-top: 15px;
-}
-button {
-  width: 80%;
-  height: 50px;
+  text-decoration: none;
+  margin: 20px auto 20px auto;
+  padding: 20px 0;
   font-size: 18px;
-  background: white;
-  border-radius: 30px;
-  border: 2px solid rgb(253, 170, 170);
+  font-weight: 500;
 }
-button:hover {
-  background: rgb(253, 170, 170);
-  color: white;
-  transition: background 1s;
-  cursor: pointer;
-}
+
 .icon {
-  margin: 50px 0;
+  margin: 30px 0;
 }
 .slack-logo {
-  width: 40px;
+  width: 20px;
   margin-right: 20px;
 }
 .git {
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
 }
 footer {
   width: 90%;
-  height: 150px;
-  margin: 30px auto;
+  height: 90px;
+  margin: 120px auto 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  border: 3px solid rgb(253, 170, 170);
-  border-radius: 10px;
+  border-top: 2px solid rgb(214, 214, 214);
 }
 .ingressive {
   width: 150px;
@@ -105,20 +95,20 @@ footer {
 }
 .zuri-logo span {
   color: red;
+  font-size: 20px;
 }
 footer p {
   color: gray;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   body {
     height: 1150px;
   }
   .avatar {
-    right: 20px;
+    right: 30px;
   }
   .avatar .ellipsis {
-    margin-left: 10px;
     display: block;
   }
   .avatar .share {

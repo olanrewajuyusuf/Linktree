@@ -3,23 +3,26 @@ import { Fragment } from "react";
 const Button = () => {
   return (
     <Fragment>
-      <a href="https://twitter.com/WaliyyullahY">
-        <button id="btn_zuri">Twitter Link</button>
+      <a id="twitter__link" href="https://twitter.com/WaliyyullahY">
+        Twitter Link
       </a>
-      <a href="https://training.zuri.team/">
-        <button id="btn_zuri">Zuri Training</button>
+      <a id="btn__zuri" href="https://training.zuri.team/">
+        Zuri Training
       </a>
-      <a href="http://books.zuri.team">
-        <button id="books">Zuri Bookshop</button>
+      <a id="books" href="http://books.zuri.team">
+        Zuri Bookshop
       </a>
-      <a href="https://books.zuri.team/python-for-beginners?ref_id=<olanrewajuyusuf">
-        <button id="book_python">Python Books</button>
+      <a
+        id="book__python"
+        href="https://books.zuri.team/python-for-beginners?ref_id=<olanrewajuyusuf"
+      >
+        Python Books
       </a>
-      <a href="https://background.zuri.team">
-        <button id="pitch">Backgound Check for Coders</button>
+      <a id="pitch" href="https://background.zuri.team">
+        Backgound Check for Coders
       </a>
-      <a href="https://books.zuri.team/design-rules">
-        <button id="book_design">Design Books</button>
+      <a id="book__design" href="https://books.zuri.team/design-rules">
+        Design Books
       </a>
     </Fragment>
   );

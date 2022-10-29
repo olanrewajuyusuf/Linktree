@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import Button from "./Button";
-import { FaGithub, FaShare, FaEllipsisH } from "react-icons/fa";
+import { RiShareForwardLine } from "react-icons/ri";
+import { FaGithub, FaEllipsisH } from "react-icons/fa";
 
 const LinkTree = () => {
   return (
@@ -8,8 +9,8 @@ const LinkTree = () => {
       <div id="container">
         <div className="profile">
           <div className="avatar">
-            <FaEllipsisH className="fa ellipsis" />
-            <FaShare className="fa share" />
+            <FaEllipsisH className="ellipsis" />
+            <RiShareForwardLine className="share" />
           </div>
           <img
             className="profile-pics"
