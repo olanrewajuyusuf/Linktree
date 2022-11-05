@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import { Link } from "react-router-dom";
 
 const Button = () => {
   return (
@@ -24,9 +25,9 @@ const Button = () => {
       <a id="book__design" href="https://books.zuri.team/design-rules">
         Design Books
       </a>
-      <a id="contact" href="/contact">
+      <Link id="contact" to="/contact">
         Contact Me
-      </a>
+      </Link>
     </Fragment>
   );
 };
