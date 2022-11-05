@@ -24,6 +24,9 @@ const Button = () => {
       <a id="book__design" href="https://books.zuri.team/design-rules">
         Design Books
       </a>
+      <a id="contact" href="/contact">
+        Contact Me
+      </a>
     </Fragment>
   );
 };

@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import Button from "./Button";
-import { RiShareForwardLine } from "react-icons/ri";
+import Footer from "./footer";
 import { FaGithub, FaEllipsisH } from "react-icons/fa";
 
 const LinkTree = () => {
@@ -10,7 +10,7 @@ const LinkTree = () => {
         <div className="profile">
           <div className="avatar">
             <FaEllipsisH className="ellipsis" />
-            <RiShareForwardLine className="share" />
+            <img src="Icon.png" alt="#" className="share" />
           </div>
           <img
             className="profile-pics"
@@ -26,13 +26,7 @@ const LinkTree = () => {
           <FaGithub className="git" />
         </div>
       </div>
-      <footer>
-        <h2 className="zuri-logo">
-          Zuri<span>.</span>Internship
-        </h2>
-        <p>HNG Intership 9 Frontend Task</p>
-        <img className="ingressive" src="I4G-Logo-Color-Cropped.png" alt="#" />
-      </footer>
+      <Footer />
     </Fragment>
   );
 };

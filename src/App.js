@@ -1,5 +1,4 @@
 import LinkTree from "./components/Profile";
-import "./App.css";
 
 function App() {
   return (
